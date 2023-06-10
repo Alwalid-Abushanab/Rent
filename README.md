@@ -1,4 +1,4 @@
-# rent_tracker
+# rent
 
 A new Flutter project.
 
