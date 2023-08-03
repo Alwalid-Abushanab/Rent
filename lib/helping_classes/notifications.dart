@@ -26,7 +26,7 @@ class Notifications{
     );
   }
 
-  scheduleNotification({int id = 0, required String title,required String body, required DateTime date}) async{
+  scheduleNotification({required int id, required String title,required String body, required DateTime date}) async{
 
     return flutterLocalNotificationsPlugin.zonedSchedule(
       id,
@@ -37,5 +37,9 @@ class Notifications{
       uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,
       androidAllowWhileIdle: true,
     );
+  }
+
+  unScheduleNotification({required int id}){
+    return flutterLocalNotificationsPlugin.cancel(id);
   }
 }

@@ -3,7 +3,7 @@ import 'package:rent/routes/route_generator.dart';
 
 class RentApp extends MaterialApp {
   RentApp({Key? key}) : super(key: key,
-    initialRoute:  RouteGenerator.homePage,
+    initialRoute:  RouteGenerator.authenticationPage,
     onGenerateRoute: RouteGenerator.generateRoute,
     theme: ThemeData(
       primarySwatch: Colors.cyan,

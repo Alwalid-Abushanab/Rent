@@ -20,5 +20,5 @@ void main() async {
   Notifications().initialize();
   timezone.initializeTimeZones();
 
-  runApp(RentApp());
+  runApp(RentApp(),);
 }
